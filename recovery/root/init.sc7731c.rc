@@ -1,4 +1,3 @@
-import /init.board.rc
 import /init.${ro.hardware}.usb.rc
 
 on early-init
