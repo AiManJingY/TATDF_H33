@@ -1,4 +1,4 @@
-# Android device tree for SPRD SP7731CEB (scx20_sp7731ceb)
+# Android device tree for SPRD SP7731CEB (TATDF_H33)
 
 ```
 #
