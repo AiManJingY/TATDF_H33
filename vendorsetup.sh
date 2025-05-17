@@ -4,6 +4,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+# import patch1
+patch -Np1 < device/sprd/scx20_sp7731ceb/init.c.patch
 
 add_lunch_combo omni_scx20_sp7731ceb-user
 add_lunch_combo omni_scx20_sp7731ceb-userdebug
