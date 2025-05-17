@@ -100,3 +100,6 @@ TW_BRIGHTNESS_PATH := /sys/class/backlight/sprd_backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 128
 
+TW_NO_SCREEN_BLANK := true
+TW_FORCE_CPU_RENDERING := true
+
