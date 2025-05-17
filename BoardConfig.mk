@@ -84,6 +84,11 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 
+# 背光控制路径
+TW_BRIGHTNESS_PATH := /sys/class/backlight/sprd_backlight/brightness
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 128
+
 TW_FBIOPAN := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 DEVICE_RESOLUTION := 480x800
@@ -93,12 +98,6 @@ TW_TARGET_USES_QTI_BSP := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_BRIGHTNESS_PATH := /sys/class/backlight/panel/brightness
 TW_MAX_BRIGHTNESS := 255
-
-# 背光控制路径
-TW_BRIGHTNESS_PATH := /sys/class/backlight/sprd_backlight/brightness
-TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 128
-
 TW_NO_SCREEN_BLANK := true
 TW_FORCE_CPU_RENDERING := true
 
