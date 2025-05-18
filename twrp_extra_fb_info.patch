@@ -1,0 +1,22 @@
+--- a/bootable/recovery/minuitwrp/graphics_fbdev.cpp
++++ b/bootable/recovery/minuitwrp/graphics_fbdev.cpp
+@@ -182,11 +182,17 @@ static GRSurface* fbdev_init(minui_backend* backend) {
+            "  vi.bits_per_pixel = %d\n"
+            "  vi.red.offset   = %3d   .length = %3d\n"
+            "  vi.green.offset = %3d   .length = %3d\n"
+-           "  vi.blue.offset  = %3d   .length = %3d\n",
++           "  vi.blue.offset  = %3d   .length = %3d\n"
++           "  fi.line_length  = %3d   smem_len= %3d\n"
++           "  vi.height       = %3d   .yres   = %3d\n"
++           "  vi.yres_virtual = %3d   .yoffset= %3d\n",
+            vi.bits_per_pixel,
+            vi.red.offset, vi.red.length,
+            vi.green.offset, vi.green.length,
+-           vi.blue.offset, vi.blue.length);
++           vi.blue.offset, vi.blue.length,
++           fi.line_length, fi.smem_len,
++           vi.height, vi.yres,
++           vi.yres_virtual, vi.yoffset);
+ 
+     void* bits = mmap(0, fi.smem_len, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+     if (bits == MAP_FAILED) {
